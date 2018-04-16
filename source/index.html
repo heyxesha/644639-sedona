@@ -8,46 +8,44 @@
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Скрыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="photo.html">Фото и видео</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="form.html">Форма отзыва</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#">HTML Academy</a>
-                </li>
-            </ul> 
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="City of Sedona">
       </a>
       <button class="page-header__toggle" type="button">Открыть меню</button>
     </header>
-      
     <main class="page-main">
       <section class="intro">
-        <header class="intro__header header">
-          <img class="header__image" src="http://placehold.it/150x100" alt="Welcome to gorgeous Sedona">
-        </header>
-        <b class="intro__slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+        <div class="intro__greeting greeting">
+          <b class="greeting__welcome">Welcome</b>
+          <b class="geeting__to-the-gorgeous">- to the gorgeous -</b>
+          <h1 class="greeting__sedona">Sedona</h1>
+          <b class="greeting__slogan">"Because the Grand Canyon sucks!"</b>
+        </div>
+        <b class="intro__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
         <p class="intro__text">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
-      <section class="fact">
-        <header class="fact__header--with-triangle">
-          <b class="fact__title">Настоящий городок</b>
-          <p class="fact__number">- №1 -</p>
-          <p class="fact__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-        </header>
-        <img class="fact__image" src="http://placehold.it/150x100">
-        <div class="fact__wrapper">
-          <ul class="fact__advantages advantages">
+      <section class="features">
+        <div class="feature-blue">
+          <b class="feature-blue__title">Настоящий городок</b>
+          <p class="feature-blue__number">- №1 -</p>
+          <p class="feature-blue__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img class="feature-blue__image" src="http://placehold.it/150x100">
+          <ul class="feature-blue__advantages-list advantage">
             <li class="advantage__item">
               <b class="advantage__title">Жилье</b>
               <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -62,35 +60,27 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="fact">
-        <header class="fact__header">
-          <b class="fact__title">Там есть мост дьявола</b>
-          <p class="fact__number">- №2 -</p>
-          <p class="fact__text">Да! По нему можно пройтись! Если вы осмелитесь, конечно!</p>
-        </header>
-        <img class="fact__image" src="http://placehold.it/150x100">
-      </section>
-      <section class="fact--gray">
-        <header class="fact--gray__header">
-          <b class="fact--gray__title">Небольшая площадь</b>
-          <p class="fact--gray__number">- №3 -</p>
-          <p class="fact--gray__text">Все интересные места находятся очень близко</p>
-        </header>
-      </section>
-      <section class="fact--gray">
-        <header class="fact--gray__header">
-          <b class="fact--gray__title">Красивая дорога</b>
-          <p class="fact--gray__number">- №4 -</p>
-          <p class="fact--gray__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </header>
-      </section>
-      <section class="fact--gray">
-        <header class="fact--gray__header">
-          <b class="fact--gray__title">Мало туристов</b>
-          <p class="fact--gray__number">- №5 -</p>
-          <p class="fact--gray__text">Большинство едет в Гранд Каньон и толпится там</p>
-        </header>
+        <div class="feature-blue">
+          <b class="feature-blue__title">Там есть мост дьявола</b>
+          <p class="feature-blue__number">- №2 -</p>
+          <p class="feature-blue__text">Да! По нему можно пройтись! Если вы осмелитесь, конечно!</p>
+          <img class="feature-blue__image" src="http://placehold.it/150x100">
+        </div>
+        <div class="feature-gray">
+          <b class="feature-gray__title">Небольшая площадь</b>
+          <p class="feature-gray__number">- №3 -</p>
+          <p class="feature-gray__text">Все интересные места находятся очень близко</p>
+        </div>
+        <div class="feature-gray">
+          <b class="feature-gray__title">Красивая дорога</b>
+          <p class="feature-gray__number">- №4 -</p>
+          <p class="feature-gray__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="feature-gray">
+          <b class="feature-gray__title">Мало туристов</b>
+          <p class="feature-gray__number">- №5 -</p>
+          <p class="feature-gray__text">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
       </section>
       <section class="find-hotel">
         <b class="find-hotel__title">Заинтересовались?</b>
@@ -102,8 +92,8 @@
       </section>
     </main>
     <footer class="page-footer">
+      <b class="page-footer__hashtag">#VISITSEDONA</b>
       <div class="page-footer__social social">
-        <b class="social__title">#VISITSEDONA</b>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
@@ -117,7 +107,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
+        <a class="copyright__text" href="#">Разработано</a>
       </div>
     </footer>
   </body>
