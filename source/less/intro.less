@@ -1,14 +1,25 @@
-@import "greeting.less";
-
 .intro {
   text-align: center;
 }
 
 .intro__text {
-  margin: 3%;
-  padding: 5% 5% 0 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .intro__title {
   font-size: 21px;
+}
+
+.intro__greeting {
+  background: url("../img/bg-intro-triangle-mobile.svg") 0 365px no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background-size: 320px 27px, 320px 389px;
+  padding: 90px 20px;
+}
+
+.intro__greeting--short {
+  background: url("../img/bg-intro-triangle-mobile.svg") 0 134px no-repeat, url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  background-size: 320px 27px, 320px 160px;
+  padding: 50px 45px 70px 45px;
 }
