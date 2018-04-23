@@ -31,7 +31,7 @@
       <button class="page-header__toggle" type="button">Открыть меню</button>
     </header>
     <main class="page-main">
-      <section class="intro">
+      <section class="intro--form">
         <div class="intro__greeting--short">
           <img src="img/text-sedona.svg" alt="Sedona" width="230px" height="40px">
         </div>
@@ -43,8 +43,8 @@
       <section class="form-info">
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-personality">
-            <b class="form-personality__title">Представьтесь:</b>
-            <ul class="form-personality__list form-list">
+            <legend class="form__legend">Представьтесь:</legend>
+            <ul class="form__list form-list">
               <li class="form-list__item">
                 <label for="name">Имя:</label>
                 <input type="text" id="name" name="name" placeholder="Петр" required>
@@ -60,8 +60,8 @@
             </ul>
           </fieldset>
           <fieldset class="form-contacts">
-            <b class="form-contacts__title">Контактная информация:</b>
-            <ul class="form-contacts__list form-list">
+            <legend class="form__legend">Контактная информация:</legend>
+            <ul class="form__list form-list">
               <li class="form-list__item">
                 <label for="tel">Контактный телефон:</label>
                 <input type="tel" id="tel" name="tel"  placeholder="Введите телефон" required>
@@ -73,8 +73,8 @@
             </ul>
           </fieldset>
           <fieldset class="form-impression">
-            <b class="form-impression__title">Ваше общее впечатление:</b>
-            <ul class="form-impression_list form-list">
+            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <ul class="form__list form-list">
               <li class="form-list__item">
                 <input type="radio" id="positive" name="positive" checked>
                 <label for="positive">Скорее положительное</label>
@@ -90,8 +90,8 @@
             </ul>
           </fieldset>
           <fieldset class="form-places">
-            <b class="form-places__title">Посещенные достопримечательности:</b>
-            <ul class="form-places_list form-list">
+            <legend class="form__legend">Посещенные достопримечательности:</legend>
+            <ul class="form__list form-list">
               <li class="form-list__item">
                 <input type="checkbox" id="devils-bridge" name="devils-bridge" checked>
                 <label for="devils-bridge">Мост Дьявола</label>
@@ -111,11 +111,16 @@
             </ul>
           </fieldset>
           <fieldset class="form-review">
-            <b class="form-review__title">Опишите свои эмоции:</b>
+            <legend class="form__legend">Опишите свои эмоции:</legend>
             <textarea class="form-review__review" id="review" name="review">Опишите подробно все свои восторги
             </textarea>
-            <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           </fieldset>
+          <div class="form-review__submit">
+            <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <small class="form-review__legend">
+              <sup>*</sup> — обязательные поля
+            </small>
+          </div>
         </form>
       </section>
     </main>
