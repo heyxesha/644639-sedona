@@ -1,5 +1,3 @@
-@import "main-nav.less";
-
 .page-header__toggle {
   position: absolute;
   top: 20px;
@@ -9,4 +7,20 @@
 .page-header__logo-image {
   padding: 0 110px 0 110px;
   margin-bottom: -27px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-image {
+    margin: 0 225px -27px 225px;
+  }
+  
+  .page-header__toggle {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-image {
+    margin: 0 450px -27px 450px;
+  }
 }

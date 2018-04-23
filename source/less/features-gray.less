@@ -1,4 +1,4 @@
-.feature-gray {
+.features-gray {
   background-color: #eeeeee;
 }
 
@@ -25,3 +25,18 @@
 .feature-gray__title {
   font-size: 18px;
 }
+
+@media (min-width: @tablet-width) {
+  .features-gray {
+    display: flex;
+  }
+  .feature-gray__text,
+  .feature-gray__text--with-border {
+    padding: 40px;
+    margin: 0 40px;
+  }
+  .feature-gray__text--with-border {
+    border: 0;
+  }
+}
+
