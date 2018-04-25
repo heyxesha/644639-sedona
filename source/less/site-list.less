@@ -12,3 +12,54 @@
   text-decoration: none;
   color: #ffffff;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    display: inline;
+    height: 75px;
+    font-size: 14px;
+    line-height: 75px;
+    list-style-type: none;
+    text-align: center;
+    border: 0;
+    font-weight: 700;
+    padding: 0 20px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 165px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-left: 25px;
+  }
+
+  .site-list__link {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    display: inline;
+    height: 55px;
+    font-size: 14px;
+    line-height: 55px;
+    list-style-type: none;
+    text-align: center;
+    border: 0;
+    font-weight: 700;
+    padding: 0 60px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 390px;
+    padding: 20px 60px 20px 0;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-left: 30px;
+    padding: 20px 0 20px 60px;
+  }
+}

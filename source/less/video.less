@@ -8,3 +8,45 @@
   text-align: center;
   margin: 10px;
 }
+
+@media (min-width: @tablet-width) {
+  .video {
+    border: 0;
+  }
+
+  .video__player {
+    padding: 0 60px;
+    width: 650px;
+    height: 500px;
+  }
+
+  .video__player img {
+    width: 650px;
+    height: 500px;
+  }
+
+  .video__text {
+    padding: 60px 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    border: 0;
+  }
+
+  .video__player {
+    padding: 0 200px;
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__player img {
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__text {
+    padding: 60px 370px;
+  }
+}

@@ -1,17 +1,18 @@
-body {
+.main-wrapper {
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif, "Arial";
   line-height: 25px;
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
   font-size: 14px;
-  margin: 0;
   padding: 0;
-  width: 320px;
+  min-width: @mobile-width;
+  max-width: @mobile-width;
 }
 
 .button {
-  width: 100%;
+  width: 285px;
   height: 55px;
   margin: 30px 0 30px 0;
   font-weight: 700;
@@ -21,4 +22,16 @@ body {
   background-color: #81b3d2;
   text-decoration: none;
   border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-wrapper {
+    max-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-wrapper {
+    min-width: @desktop-width;
+  }
 }
