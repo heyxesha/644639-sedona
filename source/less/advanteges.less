@@ -1,23 +1,51 @@
 .advantage__item {
-  padding-left: 70px;
+  margin: 30px 0;
   list-style-type: none;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  display: flex;
+}
+
+.advantage__icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  padding: 0 0 0 35px;
+}
+
+.advantage__icon--house {
+  background-image: url("/img/icon-house.svg");
+}
+
+.advantage__icon--gift {
+  background-image: url("/img/icon-gift.svg");
+}
+
+.advantage__icon--burger {
+  background-image: url("/img/icon-burger.svg");
 }
 
 @media (min-width: @tablet-width) {
   .advantage__item {
     margin-bottom: 20px;
-    margin-top: 150px;
     padding: 0 20px;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage__icon {
+    width: 90px;
+    height: 90px;
+    background-size: 90px 90px;
+    background-repeat: no-repeat;
+    padding: 0 0 30px 0;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantage__item {
     margin-bottom: 0;
-    margin-top: 150px;
+    margin-top: 0;
     padding: 50px;
     text-align: center;
   }

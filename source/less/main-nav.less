@@ -1,5 +1,6 @@
 .main-nav {
   background-color: #81b3d2;
+  box-shadow: 0px -3px 12px -5px #000000 inset;
 }
 
 .main-nav__list.site-list {
@@ -8,9 +9,20 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: -10px 20px -300px 260px;
+  background: url(../img/icon-menu.svg) no-repeat 50% 50%;
+  background-size: 23px 22px;
+  border: none;
+  outline: none;
+}
+
+.main-nav__toggle--close {
+  margin: 0 20px -60px 260px;
+  background: url(../img/icon-cross.svg) no-repeat 50% 50%;
+  background-size: 23px 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,9 +30,12 @@
     min-height: 70px;
     background-color: #ffffff;
     margin-bottom: -75px;
+    box-shadow: none;
   }
 
-  .main-nav__toggle {
+  .main-nav__toggle,
+  .main-nav__toggle--close {
+    margin: -35px;
     visibility: hidden;
   }
 }
@@ -30,5 +45,11 @@
     min-height: 55px;
     background-color: #ffffff;
     margin-bottom: -65px;
+  }
+
+  .main-nav__toggle,
+  .main-nav__toggle--close {
+    margin: -30px;
+    visibility: hidden;
   }
 }

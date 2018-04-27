@@ -11,6 +11,15 @@
 .site-list__link {
   text-decoration: none;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:focus {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -37,6 +46,24 @@
   .site-list__link {
     text-decoration: none;
     color: #000000;
+    display: inline;
+    &:hover {
+      background-color: #ffffff;
+      color: #9ac2db;
+    }
+    &:focus {
+      background-color: #ffffff;
+      color: #b2b2b2;
+    }
+    &:active {
+      color: #88786d;
+    }
+    &:active:hover {
+      color: #604e43;
+    }
+    &:active:focus {
+      color: #d6d0cc;
+    }
   }
 }
 
