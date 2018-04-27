@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   background-color: #cbe0a3;
-  background-image: url(../img/video-mobile@1x.jpg);
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: 320px 201px;
@@ -38,12 +38,12 @@
   left: 0;
   width: 280px;
   min-height: 45px;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .player__progress-bar::before {
   right: 22px;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, 0.3);
   left: 22px;
   height: 4px;
 }
@@ -52,7 +52,7 @@
   left: 50px;
   width: 9px;
   height: 10px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -67,9 +67,11 @@
 
 .player__icon {
   fill: #5c6870;
+
   &:hover {
     fill: #333333;
   }
+
   &:focus {
     fill: #b8b8b8;
   }
@@ -80,11 +82,12 @@
     min-height: 499px;
     background-size: 648px 499px;
   }
+
   .player__controls {
     position: static;
     min-height: 93px;
     margin: -93px 0 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .player__button {
@@ -107,9 +110,11 @@
 
   .player__icon {
     fill: #ffffff;
+
     &:hover {
       fill: #c2c2c2;
     }
+
     &:focus {
       fill: #949494;
     }
@@ -126,6 +131,6 @@
     position: static;
     min-height: 93px;
     margin: -93px 0 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
