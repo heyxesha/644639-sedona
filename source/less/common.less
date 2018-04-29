@@ -9,6 +9,11 @@
   padding: 0;
   min-width: @mobile-width;
   max-width: @mobile-width;
+  box-shadow: 0 1px 15px -1px #000000;
+}
+
+body {
+  background-color: #f2f2f2;
 }
 
 .button {
@@ -21,7 +26,21 @@
   color: #ffffff;
   background-color: #81b3d2;
   text-decoration: none;
-  border: 0;
+  border: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
+
+  &:disabled {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -15,7 +15,14 @@
 }
 
 .photo__likes {
-  padding: 0 50px;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.photo__likes-icon {
+  fill: #b2b2b2;
+  margin-right: 7px;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,11 +63,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15px;
+    m: 10px 15px;
   }
 
   .photo__likes {
-    padding: 0 35px 15px 0;
+    padding: 0 20px 15px 0;
+  }
+
+  .photo__description {
+    margin: 0 15px;
+  }
+
+  .photo__likes-icon {
+    fill: #a9a9a9;
   }
 }
 
@@ -98,16 +113,30 @@
   }
 
   .photo__text {
-    width: 100%;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15px;
-    margin: -70px 0 0 0;
+    padding: 0;
+    margin: -69px 0 0 0;
     color: #ffffff;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photos-list__item:first-child .photo__text {
+    width: 1200px;
   }
 
   .photo__likes {
-    padding: 0 35px 15px 0;
+    padding: 0 30px 0 0;
+  }
+
+  .photo__description {
+    margin: 15px 0 5px 15px;
+  }
+
+  .photo__likes-icon {
+    fill: #ffffff;
   }
 }

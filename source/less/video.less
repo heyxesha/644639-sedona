@@ -20,11 +20,6 @@
     height: 500px;
   }
 
-  .video__player img {
-    width: 650px;
-    height: 500px;
-  }
-
   .video__text {
     padding: 60px 160px;
   }
@@ -41,12 +36,21 @@
     height: 500px;
   }
 
-  .video__player img {
-    width: 800px;
-    height: 500px;
-  }
-
   .video__text {
     padding: 60px 370px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .player__screen {
+    min-height: 500px;
+    background-size: 800px 500px;
+  }
+
+  .player__controls {
+    position: static;
+    min-height: 93px;
+    margin: -93px 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
