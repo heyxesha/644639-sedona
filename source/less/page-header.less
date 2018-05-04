@@ -1,16 +1,25 @@
-.page-header__logo-image {
-  padding: 0;
-  margin: 0 110px -27px 110px;
+.page-header__logo {
+  position: relative;
+  left: 109px;
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__logo-image {
-    margin: 0 330px -27px 330px;
+  .page-header__logo {
+    left: 333px;
+    top: -20px;
+  }
+
+  .page-header {
+    height: 105px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__logo-image {
-    margin: 0 550px -27px 550px;
+  .page-header__logo {
+    left: 505px;
+  }
+
+  .page-header {
+    height: 120px;
   }
 }
