@@ -31,7 +31,18 @@ gulp.task("style", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src([
+    "source/img/icon-twitter.svg",
+    "source/img/icon-facebook.svg",
+    "source/img/icon-youtube.svg",
+    "source/img/icon-like.svg",
+    "source/img/logo-htmlacademy.svg",
+    "source/img/icon-mail.svg",
+    "source/img/icon-phone.svg",
+    "source/img/icon-video-fullscreen.svg",
+    "source/img/icon-video-replay.svg",
+    "source/img/icon-video-subtitles.svg"
+    ])
     .pipe(svgstore({
       inlineSvg: true
     }))
