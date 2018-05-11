@@ -11,16 +11,18 @@
 
 .feature-blue__text,
 .feature-blue__text--with-triangle {
-  line-height: 25px;
+  line-height: 21px;
   text-align: center;
 }
 
 .feature-blue__text {
-  padding: 40px 20px;
+  padding: 30px 20px;
+  margin-top: -3px;
 }
 
 .feature-blue__title {
-  font-size: 21px;
+  font-size: 18px;
+  line-height: 10px;
 }
 
 .feature-blue__content,
@@ -36,11 +38,12 @@
 }
 
 .feature-blue__text--with-triangle {
-  padding: 70px 20px 40px 20px;
+  padding: 70px 20px 30px 20px;
+  margin-top: -17px;
 }
 
 .feature-blue__advantages-list {
-  line-height: 20px;
+  line-height: 21px;
   background-color: #ffffff;
   padding: 20px;
   margin: 0;
@@ -50,7 +53,7 @@
   .feature-blue__content {
     display: flex;
     flex-wrap: nowrap;
-    margin: 0;
+    margin: 2px 0 0 0;
   }
 
   .feature-blue__content--reverse {
@@ -63,8 +66,14 @@
   .feature-blue__text,
   .feature-blue__text--with-triangle {
     width: 256px;
-    padding: 0 40px;
+    padding: 20px 45px;
     margin: auto;
+  }
+
+  .feature-blue__title {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0 7px 0 8px;
   }
 
   .triangle {
@@ -78,31 +87,20 @@
 
   .feature-blue__advantages-list {
     display: flex;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 60px 0 45px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .feature-blue__content {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .feature-blue__content--reverse {
-    flex-direction: row-reverse;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .feature-blue__text,
-  .feature-blue__text--with-triangle {
+  .feature-blue__text {
     width: 400px;
-    padding: 0 40px;
-    margin: auto;
+    padding: 49px 80px;
   }
 
-  .triangle {
-    background-image: none;
+  .feature-blue__title {
+    width: 151px;
+    margin: auto;
   }
 
   .feature-blue__image {
@@ -110,8 +108,12 @@
     height: 255px;
   }
 
+  .feature-blue__text--with-triangle {
+    width: 400px;
+    padding: 49px 60px;
+  }
+
   .feature-blue__advantages-list {
-    display: flex;
-    padding: 0;
+    padding: 10px 0 0 0;
   }
 }

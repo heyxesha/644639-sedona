@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -44,8 +47,8 @@
         <div class="intro__greeting--short">
           <img src="img/text-sedona.svg" alt="Sedona" width="230px" height="40px">
         </div>
-        <div class="intro__text">
-          <h2 class="intro__title">Оставьте свой отзыв</h2>
+        <div class="intro__text intro__text--form">
+          <h2 class="intro__title intro__title--form">Оставьте свой отзыв</h2>
           <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
@@ -175,13 +178,19 @@
         </a>
       </div>
     </footer>
-    <div hidden class="pop-up">
-      <b class="pop-up__title">Что-то пошло не так!</b>
-      <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <div class="pop-up pop-up--fail">
+      <div  class="pop-up__text">
+        <b class="pop-up__title">Что-то пошло не так!</b>
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <button class="button">Ок</button>
     </div>
-    <div hidden class="pop-up">
-      <b class="pop-up__title">Ваш отзыв отправлен!</b>
-      <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+    <div class="pop-up pop-up--success">
+      <div  class="pop-up__text">
+        <b class="pop-up__title">Ваш отзыв отправлен!</b>
+        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+      </div>
+      <button class="button">Закрыть окно</button>
     </div>
   </div>
 </body>
