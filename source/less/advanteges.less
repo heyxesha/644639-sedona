@@ -1,7 +1,13 @@
 .advantage__item {
-  margin: 30px 0;
+  margin: 5px 0;
   list-style-type: none;
   display: flex;
+}
+
+.advantage__title {
+  font-size: 18px;
+  line-height: 10px;
+  margin-bottom: 22px;
 }
 
 .advantage__item::before {
@@ -10,7 +16,7 @@
   height: 40px;
   background-size: 40px 40px;
   background-repeat: no-repeat;
-  padding: 0 0 0 35px;
+  padding: 0 0 0 30px;
 }
 
 .advantage__item:nth-child(1)::before {
@@ -27,27 +33,40 @@
 
 @media (min-width: @tablet-width) {
   .advantage__item {
-    margin-bottom: 20px;
-    padding: 0 20px;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
   .advantage__item::before {
-    width: 90px;
-    height: 90px;
-    background-size: 90px 90px;
-    background-repeat: no-repeat;
-    padding: 0 0 30px 0;
+    width: 75px;
+    height: 75px;
+    background-size: 75px 75px;
+    padding: 0 0 15px 0;
+  }
+  
+  .advantage__text {
+    width: 165px;
+  }
+  
+  .advantage__title {
+    margin-bottom: 30px;
+  }
+  
+  .advantage__item:nth-child(2) {
+    order: 2;
   }
 }
+  
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .advantage__item {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 50px;
-    text-align: center;
+    padding: 50px 0 70px 0;
+  }
+
+  .advantage__text {
+    width: 270px;
   }
 }

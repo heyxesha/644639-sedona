@@ -53,7 +53,7 @@
 }
 
 .player__progress-bar::after {
-  left: 50px;
+  left: 60px;
   width: 9px;
   height: 10px;
   background-color: #ffffff;
@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .player__screen {
     background-image: url("../img/video-tablet@1x.jpg");
     min-height: 499px;
@@ -116,6 +116,10 @@
     right: 35px;
     left: 0;
   }
+  
+  .player__progress-bar::after {
+    left: 115px;
+  }
 
   .player__icon {
     fill: #ffffff;
@@ -130,7 +134,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   .player__screen {
     background-image: url("../img/video-desktop@1x.jpg");
     min-height: 500px;
@@ -139,12 +143,5 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/video-desktop@2x.jpg");
     }
-  }
-
-  .player__controls {
-    position: static;
-    min-height: 93px;
-    margin: -93px 0 0;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 }
