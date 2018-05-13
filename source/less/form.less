@@ -70,6 +70,7 @@
   margin: 0;
   padding: 0 20px;
   font-weight: 700;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 25px;
   color: #000000;
@@ -104,10 +105,10 @@
 }
 
 .form-review__text {
-  width: 270px;
-  height: 160px;
-  padding: 10px 0 0 20px;
-  margin-bottom: 25px;
+  width: 260px;
+  height: 145px;
+  padding: 15px 0 0 20px;
+  margin-bottom: 35px;
 }
 
 .form-list__item--contacts {
@@ -115,11 +116,15 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-list__item--contacts:last-child {
   margin-bottom: 20px;
 }
 
 .form-list__title--contacts {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: 20px;
   line-height: 25px;
   height: 25px;
@@ -131,16 +136,19 @@
 .toggle-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 7px 0;
 }
 
 .checkbox-list {
-  padding: 0 0 20px 0;
+  padding: 0;
 }
 
-.checkbox-list__item,
+.checkbox-list__item {
+  margin: 0 0 22px 0;
+}
+
 .toggle-list__item {
-  margin: 0 0 17px 0;
+  margin: 0 0 15px 0;
 }
 
 input[type="checkbox"],
@@ -263,6 +271,10 @@ input[type="radio"] {
     flex-basis: 648px;
     padding: 10px 0 35px 0;
   }
+  
+  .form-list__item--contacts {
+    margin-bottom: 20px;
+  }
 
   .form fieldset:nth-child(2),
   .form fieldset:nth-child(4),
@@ -290,8 +302,8 @@ input[type="radio"] {
   }
 
   .form-review__text {
-    margin: 60px 0 35px 0;
-    width: 658px;
+    margin: 55px 0 50px 0;
+    width: 630px;
   }
 
   .form button {
@@ -314,7 +326,7 @@ input[type="radio"] {
 
   .checkbox-list {
     width: 480px;
-    padding: 30px 90px 20px 90px;
+    padding: 30px 90px 0 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -323,15 +335,19 @@ input[type="radio"] {
 
   .checkbox-list__item {
     width: 220px;
+    margin: 0 0 35px 0;
   }
 
-  .checkbox-list__item,
   .toggle-list__item {
     margin: 0 0 25px 0;
   }
+  
+  .checkbox-list__title {
+    padding: 0 0 0 80px;
+  }
 
   .form-list__title--contacts {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 }
 
@@ -349,7 +365,7 @@ input[type="radio"] {
   .form-impression {
     order: -1;
     flex-basis: 400px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 
   .form-contacts,
@@ -362,7 +378,7 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    padding: 75px 0 55px 0;
+    padding: 70px 0 35px 0;
   }
 
   .form__legend {
@@ -380,20 +396,21 @@ input[type="radio"] {
   }
 
   .form-review__text {
-    margin-top: 60px;
-    width: 950px;
-    margin-bottom: 0;
+    margin-top: 50px;
+    width: 940px;
+    margin-bottom: 20px;
   }
 
   .form button {
-    width: 550px;
-    height: 60px;
+    width: 510px;
+    height: 55px;
     margin: 30px 0;
   }
 
   .form-review__legend {
     flex-basis: 180px;
-    margin-left: 300px;
+    margin-left: 310px;
+    font-size: 14px;
   }
 
   .form-list__item--contacts {
@@ -403,7 +420,11 @@ input[type="radio"] {
   }
 
   .form-list__item--contacts:first-child {
-    margin-right: 30px;
+    flex-basis: 400px;
+  }
+  
+  .form-list__item--contacts:nth-child(2) {
+    flex-basis: 480px;
   }
 
   .form-list__title--contacts {
@@ -416,13 +437,24 @@ input[type="radio"] {
     padding: 40px 0;
   }
 
+  .checkbox-list__item {
+    width: 190px;
+    margin: 5px 10px 25px 5px;
+  }
+
+
   .form-impression .form__legend {
     padding: 0 0 30px 0;
-    text-align: center;
+    text-align: left;
+    margin: 0 0 0 80px;
   }
 
   .form-personality .form__legend {
     padding: 0 0 30px 0;
     text-align: left;
+  }
+  
+  .hidden {
+    display: none;
   }
 }

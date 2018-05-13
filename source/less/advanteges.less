@@ -12,23 +12,29 @@
 
 .advantage__item::before {
   content: "";
-  width: 40px;
-  height: 40px;
-  background-size: 40px 40px;
   background-repeat: no-repeat;
   padding: 0 0 0 30px;
 }
 
 .advantage__item:nth-child(1)::before {
   background-image: url("../img/icon-house.svg");
+  background-size: 37px 37px;
+  width: 37px;
+  height: 37px;
 }
 
 .advantage__item:nth-child(2)::before {
   background-image: url("../img/icon-gift.svg");
+  width: 33px;
+  height: 37px;
+  background-size: 33px 37px;
 }
 
 .advantage__item:nth-child(3)::before {
   background-image: url("../img/icon-burger.svg");
+  width: 35px;
+  height: 40px;
+  background-size: 35px 40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,11 +46,29 @@
     margin: 0;
   }
 
-  .advantage__item::before {
-    width: 75px;
-    height: 75px;
-    background-size: 75px 75px;
+  .advantage__item::before, {
     padding: 0 0 15px 0;
+  }
+
+  .advantage__item:nth-child(1)::before {
+    background-image: url("../img/icon-house.svg");
+    background-size: 75px 71px;
+    width: 75px;
+    height: 71px;
+  }
+
+  .advantage__item:nth-child(2)::before {
+    background-image: url("../img/icon-gift.svg");
+    width: 60px;
+    height: 70px;
+    background-size: 60px 70px;
+  }
+
+  .advantage__item:nth-child(3)::before {
+    background-image: url("../img/icon-burger.svg");
+    width: 75px;
+    height: 70px;
+    background-size: 75px 70px;
   }
 
   .advantage__text {
@@ -53,6 +77,7 @@
 
   .advantage__title {
     margin-bottom: 30px;
+    font-size: 21px;
   }
 
   .advantage__item:nth-child(2) {
@@ -62,10 +87,15 @@
 
 @media (min-width: @desktop-width) {
   .advantage__item {
-    padding: 50px 0 70px 0;
+    padding: 50px 0 65px 0;
   }
 
   .advantage__text {
-    width: 270px;
+    width: 290px;
+  }
+  
+  .advantage__item:nth-child(2) .advantage__text {
+    width: 195px;
+    padding: 0 52px;
   }
 }
