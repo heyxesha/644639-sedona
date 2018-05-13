@@ -5,6 +5,7 @@
   min-width: 320px;
   box-shadow: 0 1px 15px -7px #000000;
   display: none;
+  position: absolute;
 }
 
 .pop-up__text {
@@ -28,9 +29,15 @@
   margin: 20px 0;
 }
 
+.pop-up--fail {
+  top: 1920px;
+  background-color: #ffffff;
+}
+
 .pop-up--success {
   width: 280px;
   background-color: #f2f2f2;
+  top: 1530px;
 }
 
 .pop-up__title {
@@ -43,10 +50,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .pop-up.pop-up--fail {
+  .pop-up--fail {
     min-width: 400px;
     max-width: 400px;
     height: 350px;
+    top: 1420px;
+    margin: 0 180px;
   }
 
   .pop-up__title {
@@ -68,11 +77,13 @@
     margin: 25px 0 0 0;
   }
 
-  .pop-up.pop-up--success {
+  .pop-up--success {
     padding: 0;
     min-width: 640px;
     max-width: 640px;
     height: 350px;
+    top: 1250px;
+    margin: 0 60px;
   }
 
   .pop-up--success .button {
@@ -85,5 +96,17 @@
     width: 274px;
     height: 60px;
     margin: 40px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pop-up--success {
+    top: 1120px;
+    margin: 0 280px;
+  }
+
+  .pop-up--fail {
+    top: 1400px;
+    margin: 0 400px;
   }
 }
