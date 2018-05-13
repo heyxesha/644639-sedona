@@ -21,7 +21,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link site-list__link--active">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -38,18 +38,18 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Sedona">
         </picture>
       </a>
     </header>
     <main class="page-main">
       <section class="intro">
         <div class="intro__greeting">
-          <img src="img/text-sedona-index.svg" class="greeting__welcome" alt="Welcome to the georgeous Sedona" width="280px" height="215px">
+          <img src="img/text-sedona-index.svg" class="greeting__welcome" alt="Welcome to the georgeous Sedona" width="280" height="215">
         </div>
         <div class="intro__text">
-          <h3 class="intro__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-          <p>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h3 class="intro__title">Седона – небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </section>
       <section class="features">
@@ -57,7 +57,7 @@
           <div class="feature-blue__content">
             <div class="feature-blue__text--with-triangle">
               <h2 class="feature-blue__title">Настоящий городок</h2>
-              <p class="feature-blue__number">- №1 -</p>
+              <p class="feature-blue__number">– №1 –</p>
               <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture>
@@ -66,7 +66,7 @@
               <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-              <img class="feature-blue__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x">
+              <img class="feature-blue__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="City">
             </picture>
           </div>
           <ul class="feature-blue__advantages-list advantage">
@@ -94,8 +94,8 @@
           <div class="feature-blue__content--reverse">
             <div class="feature-blue__text">
               <h2 class="feature-blue__title">Там есть мост дьявола</h2>
-              <p class="feature-blue__number">- №2 -</p>
-              <p>Да! По нему можно пройтись! Если вы осмелитесь, конечно!</p>
+              <p class="feature-blue__number">– №2 –</p>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, конечно!</p>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
@@ -103,7 +103,7 @@
               <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-              <img class="feature-blue__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x">
+              <img class="feature-blue__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Bridge">
             </picture>
           </div>
         </div>
@@ -111,21 +111,21 @@
           <div class="feature-gray">
             <div class="feature-gray__text">
               <h2 class="feature-gray__title">Небольшая площадь</h2>
-              <p class="feature-gray__number">- №3 -</p>
+              <p class="feature-gray__number">– №3 –</p>
               <p>Все интересные места находятся очень близко</p>
             </div>
           </div>
           <div class="feature-gray">
             <div class="feature-gray__text--border">
               <h2 class="feature-gray__title">Красивая дорога</h2>
-              <p class="feature-gray__number">- №4 -</p>
+              <p class="feature-gray__number">– №4 –</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </div>
           <div class="feature-gray">
             <div class="feature-gray__text">
               <h2 class="feature-gray__title">Мало туристов</h2>
-              <p class="feature-gray__number">- №5 -</p>
+              <p class="feature-gray__number">– №5 –</p>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </div>
@@ -134,11 +134,14 @@
       <section class="find-hotel">
         <div class="find-hotel__text">
           <h2 class="find-hotel__title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-          <button class="button" href="#">НАЙТИ ГОСТИНИЦУ</button>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <form action="searsh.html">
+            <button class="button" type="submit">Найти гостиницу</button>
+          </form>
         </div>
       </section>
       <section class="map">
+        <h2 hidden>Карта</h2>
         <!--
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565749244!2d-111.83015809006807!3d34.85444381567573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1524431584824" width="320px" height="350px"></iframe>
           -->
@@ -164,8 +167,8 @@
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <p class="page-footer__copyright-text" href="#">Разработано</p>
-        <a href="https://htmlacademy.ru/" class="page-footer__copyright-logo" href="#">
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a href="https://htmlacademy.ru/" class="page-footer__copyright-logo">
           <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#logo-htmlacademy"></use></svg>
         </a>
       </div>
