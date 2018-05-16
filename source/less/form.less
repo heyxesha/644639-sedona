@@ -1,20 +1,28 @@
-.form-info {
-  text-align: center;
-  margin-top: -4px;
-  padding-bottom: 40px;
-}
-
 .form__legend {
   font-size: 18px;
   font-weight: 700;
   padding: 20px 0 0 0;
 }
 
-.form-personality,
-.form-contacts,
-.form-impression,
-.form-places,
-.form-review {
+.form__personality .form__legend {
+  margin: 0 70px;
+}
+
+.form__impression .form__legend,
+.form__contacts .form__legend, 
+.form__places .form__legend {
+  margin: 0 20px;
+}
+
+.form__review .form__legend {
+  margin: 0 32px;
+}
+
+.form__personality,
+.form__contacts,
+.form__impression,
+.form__places,
+.form__review {
   padding: 20px 20px 5px 20px;
 }
 
@@ -28,214 +36,14 @@
   border: none;
 }
 
-.form-review__legend {
+.form__footnote {
   visibility: hidden;
-}
-
-.form-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
 }
 
 .form button {
   width: 280px;
   margin: 0 20px;
   text-transform: uppercase;
-}
-
-.form-list__item {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.form-list__title {
-  display: block;
-  padding-right: 20px;
-  line-height: 58px;
-  user-select: none;
-  height: 58px;
-}
-
-.form-list__inner {
-  display: flex;
-  width: 100%;
-}
-
-.form-review__text,
-.form-list__input {
-  flex-grow: 1;
-  width: 1%;
-  height: 58px;
-  margin: 0;
-  padding: 0 20px;
-  font-weight: 700;
-  font-family: "PT Sans", sans-serif, "Arial";
-  font-size: 18px;
-  line-height: 25px;
-  color: #000000;
-  text-transform: none;
-  background-color: #f2f2f2;
-  border: none;
-  outline: none;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:focus {
-    background-color: #ffffff;
-    outline: 3px solid #e5e5e5;
-    outline-offset: -3px;
-  }
-}
-
-.input-icon-wrapper--mail {
-  width: 58px;
-  height: 58px;
-  background-color: #e6e6e6;
-  line-height: 58px;
-}
-
-.input-icon-wrapper--tel {
-  width: 58px;
-  height: 58px;
-  background-color: #e6e6e6;
-  line-height: 65px;
-}
-
-.form-review__text {
-  width: 260px;
-  height: 145px;
-  padding: 15px 0 0 20px;
-  margin-bottom: 35px;
-}
-
-.form-list__item--contacts {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.form-list__item--contacts:last-child {
-  margin-bottom: 20px;
-}
-
-.form-list__title--contacts {
-  margin-bottom: 10px;
-  margin-left: 20px;
-  line-height: 25px;
-  height: 25px;
-  text-align: left;
-  white-space: nowrap;
-}
-
-.checkbox-list,
-.toggle-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 7px 0;
-}
-
-.checkbox-list {
-  padding: 0;
-}
-
-.checkbox-list__item {
-  margin: 0 0 22px 0;
-}
-
-.toggle-list__item {
-  margin: 0 0 15px 0;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-.checkbox-list__input,
-.toggle-list__input {
-  opacity: 0;
-  position: absolute;
-}
-
-.checkbox-list__title,
-.toggle-list__title {
-  position: relative;
-  display: block;
-  padding-left: 75px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 56px;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-  white-space: nowrap;
-  user-select: none;
-}
-
-.toggle-list__title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: block;
-  width: 18px;
-  height: 18px;
-  background-color: #f2f2f2;
-  border: 18px solid #f2f2f2;
-  border-radius: 50%;
-}
-
-.checkbox-list__title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: block;
-  width: 56px;
-  height: 56px;
-  background-color: #f2f2f2;
-  border: none;
-  border-radius: 5px;
-}
-
-.toggle-list__title:hover::before,
-.checkbox-list__title:hover::before {
-  background-color: #e6e6e6;
-  border-color: #e6e6e6;
-}
-
-.toggle-list__title:active::before,
-.checkbox-list__title:active::before {
-  background-color: #d5d5d5;
-  border-color: #d5d5d5;
-}
-
-.checkbox-list__input:checked + .checkbox-list__title::before {
-  background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%;
-}
-
-.toggle-list__input:checked + .toggle-list__title::before {
-  background-color: #333333;
-}
-
-.toggle-list__input:active:checked + .toggle-list__title:active::before {
-  background-color: #a4a4a4;
-}
-
-.checkbox-list__input:active:checked + .checkbox-list__title:active::before {
-  background: #d5d5d5 url("../img/icon-tick.svg") no-repeat 50% 50%;
-}
-
-.checkbox-list__input[type="checkbox"]:focus + .checkbox-list__title::before {
-  background-color: #d5d5d5;
-}
-
-.toggle-list__input[type="radio"]:focus + .toggle-list__title::before {
-  border-color: #d5d5d5;
 }
 
 @media (min-width: @tablet-width) {
@@ -251,29 +59,21 @@ input[type="radio"] {
     border: none;
   }
 
-  .form__list {
-    padding: 10px 0 0 0;
-  }
-
-  .form-personality {
+  .form__personality {
     flex-basis: 266px;
     padding: 20px 0 30px 0;
   }
 
-  .form-impression {
+  .form__impression {
     order: -1;
     flex-basis: 323px;
     padding: 20px 0 40px 0;
   }
 
-  .form-contacts,
-  .form-places {
+  .form__contacts,
+  .form__places {
     flex-basis: 648px;
     padding: 10px 0 35px 0;
-  }
-
-  .form-list__item--contacts {
-    margin-bottom: 20px;
   }
 
   .form fieldset:nth-child(2),
@@ -288,22 +88,32 @@ input[type="radio"] {
     font-size: 21px;
     padding: 0 50px;
     background-color: #ffffff;
+    display: inline;
+    text-align: center; 
   }
 
-  .form-impression .form__legend,
-  .form-personality .form__legend {
+  .form__impression .form__legend,
+  .form__personality .form__legend {
     padding: 0 0 30px 0;
     text-align: left;
+    margin: 0;
   }
 
-  .form-review {
+  .form__contacts .form__legend {
+    margin: 0 130px;
+  }
+  
+  .form__places .form__legend {
+    margin: 0 110px;
+  }
+
+  .form__review .form__legend {
+    margin: 0 147px;
+  }
+
+  .form__review {
     flex-basis: 648px;
     padding: 0;
-  }
-
-  .form-review__text {
-    margin: 55px 0 50px 0;
-    width: 630px;
   }
 
   .form button {
@@ -312,42 +122,17 @@ input[type="radio"] {
     margin: 0;
   }
 
-  .form-review__submit {
+  .form__submit {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .form-review__legend {
-    flex-basis: 180px;
+  .form__footnote {
+    flex-basis: 190px;
     visibility: visible;
-    margin-left: 165px;
-  }
-
-  .checkbox-list {
-    width: 480px;
-    padding: 30px 90px 0 90px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-  }
-
-  .checkbox-list__item {
-    width: 220px;
-    margin: 0 0 35px 0;
-  }
-
-  .toggle-list__item {
-    margin: 0 0 25px 0;
-  }
-
-  .checkbox-list__title {
-    padding: 0 0 0 80px;
-  }
-
-  .form-list__title--contacts {
-    margin-bottom: 12px;
+    margin-left: 160px;
+    font-size: 14px;
   }
 }
 
@@ -357,24 +142,24 @@ input[type="radio"] {
     padding: 0 120px;
   }
 
-  .form-personality {
+  .form__personality {
     flex-basis: 400px;
     padding-bottom: 40px;
   }
 
-  .form-impression {
+  .form__impression {
     order: -1;
     flex-basis: 400px;
     padding-bottom: 40px;
   }
 
-  .form-contacts,
-  .form-places {
+  .form__contacts,
+  .form__places {
     flex-basis: 960px;
     padding: 0;
   }
 
-  .form-contacts .form-list {
+  .form__contacts .form-list {
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -390,15 +175,9 @@ input[type="radio"] {
     background-color: #ffffff;
   }
 
-  .form-review {
+  .form__review {
     flex-basis: 960px;
     padding: 10px 0 0 0;
-  }
-
-  .form-review__text {
-    margin-top: 50px;
-    width: 940px;
-    margin-bottom: 20px;
   }
 
   .form button {
@@ -407,54 +186,31 @@ input[type="radio"] {
     margin: 30px 0;
   }
 
-  .form-review__legend {
+  .form__footnote {
     flex-basis: 180px;
     margin-left: 310px;
-    font-size: 14px;
   }
 
-  .form-list__item--contacts {
-    flex-direction: row;
-    width: 50%;
-    margin: 0;
-  }
-
-  .form-list__item--contacts:first-child {
-    flex-basis: 400px;
-  }
-
-  .form-list__item--contacts:nth-child(2) {
-    flex-basis: 480px;
-  }
-
-  .form-list__title--contacts {
-    margin: 0;
-    line-height: 58px;
-  }
-
-  .checkbox-list {
-    width: 960px;
-    padding: 40px 0;
-  }
-
-  .checkbox-list__item {
-    width: 190px;
-    margin: 5px 10px 25px 5px;
-  }
-
-
-  .form-impression .form__legend {
+  .form__impression .form__legend {
     padding: 0 0 30px 0;
     text-align: left;
     margin: 0 0 0 80px;
   }
 
-  .form-personality .form__legend {
+  .form__personality .form__legend {
     padding: 0 0 30px 0;
     text-align: left;
   }
+  
+  .form__contacts .form__legend {
+    margin: 0 290px;
+  }
+  
+  .form__places .form__legend {
+    margin: 0 270px;
+  }
 
-  .hidden {
-    display: none;
+  .form__review .form__legend {
+    margin: 0 304px;
   }
 }

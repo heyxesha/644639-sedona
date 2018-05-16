@@ -17,8 +17,8 @@
   </div>
   <div class="main-wrapper">
     <header class="page-header">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
-      <nav class="main-nav">
+      <button class="page-header__toggle" type="button"></button>
+      <nav class="page-header__nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -30,11 +30,11 @@
             <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <a href="index.html" class="page-header__logo">
+      <a href="index.html" class="page-header__logo" title="Sedona">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -72,9 +72,9 @@
                   <p class="photo__author">Автор фото: Борис</p>
                 </div>
                 <div class="photo__likes">
-                  <button class="photo__likes-button">
+                  <a class="photo__likes-button" href="#" title="Поставить лайк">
                     <svg class="photo__likes-icon" width="22" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-like"></use></svg>
-                  </button>
+                  </a>
                   <b class="photo__likes-count">1350</b>
                 </div>
               </div>
@@ -97,9 +97,9 @@
                   <p class="photo__author">Автор фото: Сергей</p>
                 </div>
                 <div class="photo__likes">
-                  <button class="photo__likes-button">
+                  <a class="photo__likes-button" href="#" title="Поставить лайк">
                     <svg class="photo__likes-icon" width="22" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-like"></use></svg>
-                  </button>
+                  </a>
                   <b class="photo__likes-count">143</b>
                 </div>
               </div>
@@ -122,9 +122,9 @@
                   <p class="photo__author">Автор фото: Петр</p>
                 </div>
                 <div class="photo__likes">
-                  <button class="photo__likes-button">
+                  <a class="photo__likes-button" href="#" title="Поставить лайк">
                     <svg class="photo__likes-icon" width="22" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-like"></use></svg>
-                  </button>
+                  </a>
                   <b class="photo__likes-count">96</b>
                 </div>
               </div>
@@ -147,9 +147,9 @@
                   <p class="photo__author">Автор фото: Антон</p>
                 </div>
                 <div class="photo__likes">
-                  <button class="photo__likes-button">
+                  <a class="photo__likes-button" href="#" title="Поставить лайк">
                     <svg class="photo__likes-icon" width="22" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-like"></use></svg>
-                  </button>
+                  </a>
                   <b class="photo__likes-count">254</b>
                 </div>
               </div>
@@ -162,19 +162,19 @@
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p>Сморите видеопрезентацию и скорее за билетам, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="video__player">
+        <div class="video__player player">
           <div class="player__screen"></div>
           <div class="player__controls">
-            <button class="player__button">
-            <svg class="player__icon" width="16" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-video-replay"></use></svg>
-          </button>
+            <a class="player__button" href="#" title="Заново">
+              <svg class="player__icon" width="16" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-video-replay"></use></svg>
+            </a>
             <div class="player__progress-bar"></div>
-            <button class="player__button">
-            <svg class="player__icon" width="32" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-video-subtitles"></use></svg>
-          </button>
-            <button class="player__button">
+            <a class="player__button" href="#" title="Субтитры">
+              <svg class="player__icon" width="32" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-video-subtitles"></use></svg>
+            </a>
+            <a class="player__button" href="#" title="Развернуть экран">
               <svg class="player__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-video-fullscreen"></use></svg>
-          </button>
+            </a>
           </div>
         </div>
       </section>
@@ -183,24 +183,24 @@
       <h2 class="page-footer__hashtag">#VISITSEDONA</h2>
       <ul class="page-footer__list social">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" title="Мы в Twitter">
             <svg class="social__logo" width="17" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-twitter"></use></svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" title="Мы в Facebook">
             <svg class="social__logo" width="11" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-facebook"></use></svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link" href="#" title="Мы на YouTube">
             <svg class="social__logo" width="20" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#icon-youtube"></use></svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright">
         <p class="page-footer__copyright-text">Разработано</p>
-        <a href="https://htmlacademy.ru/" class="page-footer__copyright-logo">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo" title="HTML Academy">
           <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#logo-htmlacademy"></use></svg>
         </a>
       </div>

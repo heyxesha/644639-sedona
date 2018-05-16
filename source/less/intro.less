@@ -3,10 +3,9 @@
   margin-top: -40px;
 }
 
-.intro-form {
+.intro--form {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  margin-top: -40px;
 }
 
 .intro__text {
@@ -17,14 +16,14 @@
 }
 
 .intro__text--form {
-  line-height: 25px;
-  padding: 15px 20px 0 20px;
+  line-height: 24px;
+  padding: 17px 20px 4px 20px;
 }
 
 .intro__text--photo {
-  padding: 15px 20px 11px 20px;
+  padding: 16px 20px 14px 20px;
   width: 270px;
-  line-height: 25px;
+  line-height: 24px;
 }
 
 .intro__title {
@@ -32,16 +31,19 @@
   padding-bottom: 14px;
   width: 260px;
   margin: 20px auto 0 auto;
+  ine-height: 26px;
 }
 
 .intro__greeting {
   background: url("../img/bg-intro-triangle-mobile.svg") 0 100% no-repeat, url("../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat;
-  background-size: 320px 27px, auto 389px;
+  background-size: 320px 27px, auto 100%;
   padding: 90px 20px 80px 20px;
+  background-color: #427fac;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background: url("../img/bg-intro-triangle-mobile.svg") 0 100% no-repeat, url("../img/bg-back-mobile@2x.jpg") 50% 100% no-repeat;
-    background-size: 320px 27px, auto 389px;
+    background-size: 320px 27px, auto 100%;
+    background-color: #427fac;
   }
 }
 
@@ -49,23 +51,27 @@
   background: url("../img/bg-intro-triangle-mobile.svg") 0 100% no-repeat, url("../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat;
   background-size: 320px 27px, auto 389px;
   padding: 54px 45px 62px 45px;
+  background-color: #427fac;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background: url("../img/bg-intro-triangle-mobile.svg") 0 100% no-repeat, url("../img/bg-back-mobile@2x.jpg") 50% 100% no-repeat;
     background-size: 320px 27px, auto 389px;
+    background-color: #427fac;
   }
 }
 
 @media (min-width: @tablet-width) {
   .intro__greeting {
     background: url("../img/bg-intro-triangle-tablet.svg") 0 100% no-repeat, url("../img/bg-back-tablet@1x.jpg") 50% 100% no-repeat;
-    background-size: 768px 57px, auto 518px;
+    background-size: 768px 57px, auto 100%;
     padding: 75px 20px 85px 20px;
+    background-color: #427fac;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/bg-intro-triangle-tablet.svg") 0 100% no-repeat, url("../img/bg-back-tablet@2x.jpg") 50% 100% no-repeat;
-      background-size: 768px 57px, auto 518px;
+      background-size: 768px 57px, auto 100%;
       padding: 70px 20px;
+      background-color: #427fac;
     }
   }
 
@@ -73,10 +79,12 @@
     background: url("../img/bg-intro-triangle-tablet.svg") 0 100% no-repeat, url("../img/bg-back-tablet@1x.jpg") 0 100% no-repeat;
     background-size: 768px 57px, 768px auto;
     padding: 100px 20px 100px 20px;
+    background-color: #427fac;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/bg-intro-triangle-tablet.svg") 0 100% no-repeat, url("../img/bg-back-tablet@2x.jpg") 0 100% no-repeat;
       background-size: 768px 57px, 768px auto;
+      background-color: #427fac;
     }
   }
 
@@ -108,7 +116,7 @@
 
   .intro__title--form {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 30px;
     width: 440px;
   }
@@ -129,26 +137,28 @@
     height: 85px;
   }
 
-  .intro-form {
-    border-bottom: none;
-    margin-top: -25px;
-  }
-
   .intro {
     text-align: center;
-    margin-top: -30px;
+    margin-top: -55px;
+  }
+  
+  .intro--form {
+    border-bottom: none;
+    margin-top: -50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro__greeting {
     background: url("../img/bg-intro-triangle-desktop.svg") 0 100% no-repeat, url("../img/bg-back-desktop@1x.jpg") 0 100% no-repeat;
-    background-size: 1200px 57px, 1200px 520px;
+    background-size: 1200px 57px, 1200px 100%;
     padding: 80px 20px;
+    background-color: #427fac;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/bg-intro-triangle-desktop.svg") 0 100% no-repeat, url("../img/bg-back-desktop@2x.jpg") 0 100% no-repeat;
-      background-size: 1200px 57px, 1200px 520px;
+      background-size: 1200px 57px, 1200px 100%;
+      background-color: #427fac;
     }
   }
 
@@ -156,49 +166,48 @@
     background: url("../img/bg-intro-triangle-desktop.svg") 0 100% no-repeat, url("../img/bg-back-desktop@1x.jpg") 0 100% no-repeat;
     background-size: 1200px 57px, 1200px 518px;
     padding: 100px 20px 110px 20px;
+    background-color: #427fac;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/bg-intro-triangle-desktop.svg") 0 100% no-repeat, url("../img/bg-back-desktop@2x.jpg") 0 100% no-repeat;
       background-size: 1200px 57px, 1200px 518px;
+      background-color: #427fac;
     }
   }
 
   .intro__title--photo {
-    padding-top: 65px;
+    padding-top: 61px;
+    margin-bottom: 18px;
     width: 440px;
   }
 
   .intro__title {
-    padding-bottom: 10px;
+    padding-bottom: 14px;
   }
 
   .intro__text {
     padding: 30px 300px 35px 300px;
     margin-bottom: 0;
-    line-height: 30px;
   }
 
   .intro__text--photo {
-    padding-bottom: 50px;
+    padding-bottom: 55px;
     margin: auto;
     width: 440px;
+    line-height: 24px;
   }
 
   .intro__title--form {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   .intro__text--form {
-    padding: 60px 20px 45px 20px;
+    padding: 65px 20px 50px 20px;
     width: 440px;
-    line-height: 26px;
+    line-height: 24px;
   }
 
   .intro {
-    margin-top: -48px;
-  }
-
-  .intro-form {
-    margin-top: -48px;
+    margin-top: -67px;
   }
 }

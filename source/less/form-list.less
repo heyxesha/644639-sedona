@@ -1,0 +1,106 @@
+.form-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.form-list__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-list__title {
+  display: block;
+  padding-right: 20px;
+  line-height: 58px;
+  user-select: none;
+  height: 58px;
+}
+
+.form-list__inner {
+  display: flex;
+  width: 100%;
+}
+
+.form-list__input {
+  flex-grow: 1;
+  width: 1%;
+  height: 58px;
+  margin: 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  text-transform: none;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 3px solid #e5e5e5;
+    outline-offset: -3px;
+  }
+}
+
+.form-list__item--contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-list__item--contacts:last-child {
+  margin-bottom: 20px;
+}
+
+.form-list__title--contacts {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  line-height: 25px;
+  height: 25px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: @tablet-width) {
+  .form__list {
+    padding: 10px 0 0 0;
+  }
+  
+  .form-list__item--contacts {
+    margin-bottom: 20px;
+  }
+  
+  .form-list__title--contacts {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-list__item--contacts {
+    flex-direction: row;
+    width: 50%;
+    margin: 0;
+  }
+
+  .form-list__item--contacts:first-child {
+    flex-basis: 400px;
+  }
+
+  .form-list__item--contacts:nth-child(2) {
+    flex-basis: 480px;
+  }
+
+  .form-list__title--contacts {
+    margin: 0;
+    line-height: 58px;
+  }
+}
