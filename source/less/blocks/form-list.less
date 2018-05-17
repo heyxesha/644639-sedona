@@ -71,12 +71,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form__list {
-    padding: 10px 0 0 0;
+  .form-list__item {
+    margin: 10px 0 20px 0;
   }
-
+  
   .form-list__item--contacts {
-    margin-bottom: 20px;
+    margin: 15px 0 20px 0;
   }
 
   .form-list__title--contacts {
@@ -89,6 +89,13 @@
     flex-direction: row;
     width: 50%;
     margin: 0;
+  }
+
+  .form-list--contacts {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 70px 0 35px 0;
   }
 
   .form-list__item--contacts:first-child {

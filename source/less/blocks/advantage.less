@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.advantage__text {
+    max-width: 234px;
+  }
+
 .advantage__title {
   font-size: 18px;
   line-height: 10px;
@@ -44,6 +48,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    flex-basis: 256px;
   }
 
   .advantage__item::before, {
@@ -88,14 +93,15 @@
 @media (min-width: @desktop-width) {
   .advantage__item {
     padding: 50px 0 65px 0;
+    flex-basis: 400px;
   }
 
   .advantage__text {
-    width: 290px;
+    min-width: 290px;
   }
 
   .advantage__item--gift .advantage__text {
-    width: 195px;
+    min-width: 195px;
     padding: 0 52px;
   }
 }

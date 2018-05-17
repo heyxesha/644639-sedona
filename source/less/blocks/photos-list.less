@@ -1,5 +1,5 @@
 .photos-list__item {
-  padding: 20px 20px 24px 20px;
+  padding: 20px 20px 15px 20px;
   list-style-type: none;
   border-top: 1px solid #e5e5e5;
   line-height: 10px;
@@ -15,6 +15,7 @@
     padding: 0;
     border: 0;
     flex-basis: 324px;
+    height: 100%;
     background-color: #f2f2f2;
   }
 
@@ -29,7 +30,7 @@
   .photos-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px;
+    padding: 0 60px 5px 60px;
   }
 
   .photos-list__item img {
@@ -40,19 +41,6 @@
   .photos-list__item:first-child img {
     width: 648px;
     height: 400px;
-  }
-
-  .photos-list__item:first-child .photo__likes {
-    margin-left: 385px;
-  }
-
-  .photos-list__item:nth-child(2) .photo__likes {
-    margin-left: 25px;
-  }
-
-  .photos-list__item:nth-child(3) .photo__likes,
-  .photos-list__item:nth-child(4) .photo__likes {
-    margin-left: 90px;
   }
 }
 
@@ -85,22 +73,5 @@
   .photos-list__item:first-child img {
     width: 1200px;
     height: 400px;
-  }
-
-  .photos-list__item:first-child .photo__text {
-    width: 1200px;
-  }
-
-  .photos-list__item:first-child .photo__likes {
-    margin-left: 950px;
-  }
-
-  .photos-list__item:nth-child(2) .photo__likes {
-    margin-left: 115px;
-  }
-
-  .photos-list__item:nth-child(3) .photo__likes,
-  .photos-list__item:nth-child(4) .photo__likes {
-    margin-left: 182px;
   }
 }
